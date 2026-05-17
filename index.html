@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   
@@ -31,14 +32,16 @@
         </div>
     </nav>
     
-        <section id="home" class="profile-section">
-        <div class="container">
-            <div class="profile-content">
-                <div class="profile-avatar">👨‍💻</div>
-                <h1>Hi, Saya <span class="highlight">Web Developer</span></h1>
-                <p class="subtitle">Membangun website yang menarik dan fungsional</p>
+    <section id="home" class="profile-section">
+    <div class="container">
+        <div class="profile-content">
+            <div class="profile-avatar">
+                <img src="Assets/Devdan.png" alt="Foto Profil">
             </div>
+            <h1>Hi, Saya <span class="highlight">Web Developer</span></h1>
+            <p class="subtitle">Membangun website yang menarik dan fungsional</p>
         </div>
+      </div>
     </section>
 
     <section id="about" class="about-section">
@@ -145,72 +148,79 @@
                 <div class="skill-item">
                     <div class="skill-header">
                         <span class="skill-name">JavaScript</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70" style="background: linear-gradient(90deg, #ffff00, #ffd700);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">React</span>
+                        <span>10%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="10" style="background: linear-gradient(90deg, #00d4ff, #00b8db);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Bootstrap</span>
                         <span>80%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-progress="80" style="background: linear-gradient(90deg, #ffff00, #ffd700);"></div>
+                        <div class="skill-progress" data-progress="80" style="background: linear-gradient(90deg, #00d4ff, #00b8db);"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-header">
-                        <span class="skill-name">CSS</span>
-                        <span>85%</span>
+                        <span class="skill-name">Tailwind</span>
+                        <span>50%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-progress="85" style="background: linear-gradient(90deg, #00d4ff, #00b8db);"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">CSS</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="85" style="background: linear-gradient(90deg, #00d4ff, #00b8db);"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">CSS</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="85" style="background: linear-gradient(90deg, #00d4ff, #00b8db);"></div>
+                        <div class="skill-progress" data-progress="50" style="background: linear-gradient(90deg, #00d4ff, #00b8db);"></div>
                     </div>
                 </div>
             </div>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-emoji">🔶</div>
-                    <h3>HTML</h3>
-                    <p>Struktur web semantik dan aksesibel</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-emoji">🔶</div>
-                    <h3>HTML</h3>
-                    <p>Struktur web semantik dan aksesibel</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-emoji">🎨</div>
-                    <h3>CSS</h3>
-                    <p>Styling modern dan responsive design</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-emoji">🎨</div>
-                    <h3>CSS</h3>
-                    <p>Styling modern dan responsive design</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-emoji">⚡</div>
-                    <h3>JavaScript</h3>
-                    <p>Interaktivitas dan dynamic content</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-emoji">⚡</div>
-                    <h3>JavaScript</h3>
-                    <p>Interaktivitas dan dynamic content</p>
-                </div>
-            </div>
+    <div class="skill-card">
+        <div class="skill-logo text-html"><i class="fa-brands fa-html5"></i></div>
+        <h3>HTML</h3>
+        <p>Struktur web semantik dan aksesibel</p>
+    </div>
+    
+    <div class="skill-card">
+        <div class="skill-logo text-css"><i class="fa-brands fa-css3-alt"></i></div>
+        <h3>CSS</h3>
+        <p>Styling modern dan responsive design</p>
+    </div>
+    
+    <div class="skill-card">
+        <div class="skill-logo text-js"><i class="fa-brands fa-js"></i></div>
+        <h3>JavaScript</h3>
+        <p>Interaktivitas dan dynamic content</p>
+    </div>
+
+    <div class="skill-card">
+        <div class="skill-logo text-react"><i class="fa-brands fa-react"></i></div>
+        <h3>React</h3>
+        <p>Membangun UI berbasis komponen yang efisien</p>
+    </div>
+
+    <div class="skill-card">
+        <div class="skill-logo text-bootstrap"><i class="fa-brands fa-bootstrap"></i></div>
+        <h3>Bootstrap</h3>
+        <p>Prototyping cepat dengan framework CSS grid</p>
+    </div>
+
+    <div class="skill-card">
+        <div class="skill-logo img-tailwind">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="90" height="90" fill="#06B6D4"><path d="M12 1e3c-2.4 0-4.4-1.2-6-3.6 1.6 0 2.8-.4 3.6-1.2 1.2-1.2 1.2-2.4 3.6-2.4 2.4 0 4.4 1.2 6 3.6-1.6 0-2.8.4-3.6 1.2-1.2 1.2-1.2 2.4-3.6 2.4zm-6-7.2c-2.4 0-4.4-1.2-6-3.6 1.6 0 2.8-.4 3.6-1.2 1.2-1.2 1.2-2.4 3.6-2.4 2.4 0 4.4 1.2 6 3.6-1.6 0-2.8.4-3.6 1.2-1.2 1.2-1.2 2.4-3.6 2.4z" transform="translate(0 -980.36)"/></svg>
+        </div>
+        <h3>Tailwind</h3>
+        <p>Utility-first framework untuk kustomisasi desain kilat</p>
+    </div>
+</div>
         </div>
     </section>
     
@@ -218,103 +228,101 @@
         <div class="container">
             <h2 class="section-title">Project Saya</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">🛍️</div>
-                    <div class="project-content">
-                        <h3>E-Commerce Website</h3>
-                        <p>Website toko online modern dengan fitur lengkap.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com">Code</a>
-                            <a href="https://example.com">Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">🏢</div>
-                    <div class="project-content">
-                        <h3>Landing Page Company</h3>
-                        <p>Landing page company profile yang responsive.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com">Code</a>
-                            <a href="https://example.com">Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">💼</div>
-                    <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>Website portfolio dengan desain minimalis.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com">Code</a>
-                            <a href="https://example.com">Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">💼</div>
-                    <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>Website portfolio dengan desain minimalis.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com">Code</a>
-                            <a href="https://example.com">Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">💼</div>
-                    <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>Website portfolio dengan desain minimalis.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com">Code</a>
-                            <a href="https://example.com">Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">💼</div>
-                    <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>Website portfolio dengan desain minimalis.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com">Code</a>
-                            <a href="https://example.com">Demo</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="project-card">
+        <div class="project-image">
+            <img src="Assets/t1.jpg" alt="E-Commerce Website">
+        </div>
+        <div class="project-content">
+            <h3>E-Commerce Website</h3>
+            <p>Website toko online modern dengan fitur lengkap.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
             </div>
+            <div class="project-links">
+                <a href="https://github.com">Code</a>
+                <a href="https://example.com">Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+            <img src="Assets/t2.jpg" alt="Landing Page Company">
+        </div>
+        <div class="project-content">
+            <h3>Landing Page Company</h3>
+            <p>Landing page company profile yang responsive.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com">Code</a>
+                <a href="https://example.com">Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+            <img src="Assets/t3.jpg" alt="Portfolio Website">
+        </div>
+        <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>Website portfolio dengan desain minimalis.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com">Code</a>
+                <a href="https://example.com">Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+            <img src="Assets/t4.jpg" alt="Task Management App">
+        </div>
+        <div class="project-content">
+            <h3>Task Management App</h3>
+            <p>Aplikasi pengelola tugas harian untuk produktivitas.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com">Code</a>
+                <a href="https://example.com">Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+            <img src="Assets/t5.jpg" alt="Weather Dashboard">
+        </div>
+        <div class="project-content">
+            <h3>Weather Dashboard</h3>
+            <p>Melihat prakiraan cuaca real-time menggunakan API.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com">Code</a>
+                <a href="https://example.com">Demo</a>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     </section>
     
@@ -325,26 +333,27 @@
                 <div class="contact-info">
                     <h3>Mari Berkolaborasi!</h3>
                     <p>Saya terbuka untuk peluang baru. Hubungi saya melalui form atau kontak di bawah.</p>
+                    <br>
                     <div class="contact-cards">
                         <div class="contact-card">
                             <div class="contact-card-icon">📧</div>
                             <div>
                                 <h4>Email</h4>
-                                <p>your.email@example.com</p>
+                                <p>devdanzaimnarendrata8@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact-card">
                             <div class="contact-card-icon">📱</div>
                             <div>
                                 <h4>Phone</h4>
-                                <p>+62 812-3456-7890</p>
+                                <p>+62 858-7688-7871</p>
                             </div>
                         </div>
                         <div class="contact-card">
                             <div class="contact-card-icon">📍</div>
                             <div>
                                 <h4>Location</h4>
-                                <p>Jakarta, Indonesia</p>
+                                <p>Kab. Semarang, Indonesia</p>
                             </div>
                         </div>
                     </div>
@@ -397,7 +406,7 @@
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                             <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
-                        your.email@example.com
+                        devdanzaimnarendrata8@gmail.com
                     </p>
                     <div class="footer-social">
                         <a href="https://github.com" target="_blank">
