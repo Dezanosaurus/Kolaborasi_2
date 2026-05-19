@@ -1,16 +1,11 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 
 :root {
-    /* Warna aksen neon asli kamu */
     --primary: #00d4ff; 
     --secondary: #ff00ff; 
     --accent: #ffff00;
-    
-    /* Warna latar belakang asli kamu (Dark Mode) */
     --dark: #0a0e27; 
     --dark-light: #1a1f3a;
-    
-    /* Penerapan tema untuk Dark Mode */
     --bg-nav: rgba(10, 14, 39, 0.8);
     --bg-section: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 50%, #2a2f4a 100%);
     --text-main: #ffffff;
@@ -18,9 +13,7 @@
     --box-shadow-nav: rgba(0, 212, 255, 0.2);
 }
 
-/* WARNA UNTUK LIGHT MODE (Menyesuaikan agar kontras) */
 .light-theme {
-    /* Kita balik latarnya menjadi terang, namun aksen neonnya tetap dipertahankan */
     --bg-nav: rgba(245, 247, 250, 0.8);
     --bg-section: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 50%, #c8d2e6 100%);
     --text-main: #0a0e27; /* Menggunakan warna gelapmu sebagai warna teks */
@@ -46,7 +39,9 @@ body {font-family: 'Poppins', sans-serif; background: var(--dark); color: white;
 .logo {
     font-size: 28px; font-weight: 900;
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .nav-menu {display: flex; list-style: none; gap: 40px; align-items: center;}
 
@@ -82,9 +77,7 @@ body {font-family: 'Poppins', sans-serif; background: var(--dark); color: white;
     color: var(--dark); 
 }
 
-/* ========================================== */
-/* DESAIN HAMBURGER (Sembunyikan di Desktop)   */
-/* ========================================== */
+/* HAMBURGER */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -101,9 +94,7 @@ body {font-family: 'Poppins', sans-serif; background: var(--dark); color: white;
     transition: all 0.3s ease;
 }
 
-/* ========================================== */
-/* RESPONSIVITAS HANDPHONE & TABLET (< 768px) */
-/* ========================================== */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .nav-wrapper {
         height: 70px;
@@ -114,7 +105,6 @@ body {font-family: 'Poppins', sans-serif; background: var(--dark); color: white;
     /* Munculkan tombol hamburger */
     .hamburger { display: flex; }
 
-    /* Ubah Nav Menu menjadi Fullscreen/Overlay dari atas */
     .nav-menu {
         position: fixed;
         top: -100vh; /* Sembunyi di atas layar sebelum diklik */
@@ -130,14 +120,13 @@ body {font-family: 'Poppins', sans-serif; background: var(--dark); color: white;
         z-index: 1000;
     }
 
-    /* Ketika menu aktif (diklik) */
     .nav-menu.active {
         top: 0;
     }
 
     .nav-link { font-size: 18px; }
 
-    /* ANIMASI HAMBURGER JADI HURUF 'X' SAAT AKTIF */
+    /* ANIMASI HAMBURGER JADI HURUF 'X' */
     .hamburger.active span:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
         background: var(--primary);
@@ -235,7 +224,9 @@ section {padding: 120px 20px; transition: background 0.3s;}
 }
 .highlight {
     background: linear-gradient(135deg, var(--primary), var(--accent), var(--secondary));
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* About */
