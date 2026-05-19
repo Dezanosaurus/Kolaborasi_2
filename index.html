@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav id="navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="logo">Dezan</div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="profile-section">
+    <div class="container">
+        <div class="profile-content">
+            <div class="profile-avatar">
+                <img src="Assets/Devdan.png" alt="Foto Profil">
+            </div>
+            <h1 class="hero-title">Hi, I'm <span class="highlight typing-text">Devdan Zaim Narendrata</span></h1>
+            <p class="subtitle">Membangun website yang menarik dan fungsional</p>
+        </div>
+    </div>
+</section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Saya adalah seorang web developer yang passionate dalam menciptakan pengalaman digital yang menarik dan user-friendly. Dengan pengalaman dalam HTML, CSS, dan JavaScript.</p>
+                    <p>Saya percaya bahwa detail kecil dapat membuat perbedaan besar dalam menciptakan website yang tidak hanya terlihat bagus, tetapi juga memberikan pengalaman pengguna yang luar biasa.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">💻</div>
+                        <div>
+                            <h3>Clean Code</h3>
+                            <p>Menulis kode yang bersih dan terstruktur</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <div>
+                            <h3>Creative Design</h3>
+                            <p>Desain yang menarik dan responsif</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <div>
+                            <h3>Fast Performance</h3>
+                            <p>Optimasi performa website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Pengalaman Saya</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023 - Sekarang</span>
+                        <h3 class="timeline-title">Senior Web Developer</h3>
+                        <h4 class="timeline-company">Tech Company Indonesia</h4>
+                        <p>Memimpin tim pengembangan frontend untuk berbagai project e-commerce dan corporate website.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2021 - 2023</span>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <h4 class="timeline-company">Digital Agency Jakarta</h4>
+                        <p>Mengembangkan website responsive dan interactive menggunakan HTML, CSS, dan JavaScript.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2020 - 2021</span>
+                        <h3 class="timeline-title">Junior Web Developer</h3>
+                        <h4 class="timeline-company">Startup Teknologi</h4>
+                        <p>Membangun landing pages, company profiles, dan aplikasi web sederhana.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2018 - 2020</span>
+                        <h3 class="timeline-title">Web Development Bootcamp</h3>
+                        <h4 class="timeline-company">Coding Academy</h4>
+                        <p>Menyelesaikan intensive bootcamp, mempelajari fundamental web development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+    <div class="container">
+        <h2 class="section-title">Kemampuan Saya</h2>
+        <div class="skills-bars">
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">HTML</span>
+                    <span>60%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="60" style="background: linear-gradient(90deg, #E34F26, #F16529);"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">CSS</span>
+                    <span>40%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="40" style="background: linear-gradient(90deg, #1572B6, #29BEB0);"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">JavaScript</span>
+                    <span>30%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="30" style="background: linear-gradient(90deg, #F7DF1E, #ECC415);"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">React</span>
+                    <span>20%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="20" style="background: linear-gradient(90deg, #61DAFB, #00b8db);"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Bootstrap</span>
+                    <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80" style="background: linear-gradient(90deg, #7952B3, #563D7C);"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Tailwind</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70" style="background: linear-gradient(90deg, #06B6D4, #38BDF8);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="skills-grid">
+    <div class="skill-card">
+        <div class="skill-logo text-html"><i class="fa-brands fa-html5"></i></div>
+        <h3>HTML</h3>
+        <p>Struktur web semantik dan aksesibel</p>
+    </div>
+    
+    <div class="skill-card">
+        <div class="skill-logo text-css"><i class="fa-brands fa-css3-alt"></i></div>
+        <h3>CSS</h3>
+        <p>Styling modern dan responsive design</p>
+    </div>
+    
+    <div class="skill-card">
+        <div class="skill-logo text-js"><i class="fa-brands fa-js"></i></div>
+        <h3>JavaScript</h3>
+        <p>Interaktivitas dan dynamic content</p>
+    </div>
+
+    <div class="skill-card">
+        <div class="skill-logo text-react"><i class="fa-brands fa-react"></i></div>
+        <h3>React</h3>
+        <p>Membangun UI berbasis komponen yang efisien</p>
+    </div>
+
+    <div class="skill-card">
+        <div class="skill-logo text-bootstrap"><i class="fa-brands fa-bootstrap"></i></div>
+        <h3>Bootstrap</h3>
+        <p>Prototyping cepat dengan framework CSS grid</p>
+    </div>
+
+    <div class="skill-card">
+        <div class="skill-logo img-tailwind">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="90" height="90" fill="#06B6D4"><path d="M12 1e3c-2.4 0-4.4-1.2-6-3.6 1.6 0 2.8-.4 3.6-1.2 1.2-1.2 1.2-2.4 3.6-2.4 2.4 0 4.4 1.2 6 3.6-1.6 0-2.8.4-3.6 1.2-1.2 1.2-1.2 2.4-3.6 2.4zm-6-7.2c-2.4 0-4.4-1.2-6-3.6 1.6 0 2.8-.4 3.6-1.2 1.2-1.2 1.2-2.4 3.6-2.4 2.4 0 4.4 1.2 6 3.6-1.6 0-2.8.4-3.6 1.2-1.2 1.2-1.2 2.4-3.6 2.4z" transform="translate(0 -980.36)"/></svg>
+        </div>
+        <h3>Tailwind</h3>
+        <p>Utility-first framework untuk kustomisasi desain kilat</p>
+    </div>
+</div>
+        </div>
+    </section>
+    
+        <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+              
+    <div class="project-card">
+        <div class="project-image">
+            <img src="Assets/t1.jpg" alt="Bekas Jadi Berkelas">
+        </div>
+        <div class="project-content">
+            <h3>Bekas Jadi Berkelas</h3>
+            <p>A shop website that sells goods made from used materials.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Dezanosaurus/Kolaborasi_1">Code</a>
+                <a href="https://dezanosaurus.vercel.app/">See</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+            <img src="Assets/t2.jpg" alt="Sistem Management Siswa">
+        </div>
+        <div class="project-content">
+            <h3>Sistem Manajemen Siswa</h3>
+            <p>Website to manage student attendance.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Dezanosaurus/tugas2_bootstrap">Code</a>
+                <a href="https://dezanosaurus.github.io/tugas2_bootstrap/">See</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+            <img src="Assets/t3.jpg" alt="Portfolio Website">
+        </div>
+        <div class="project-content">
+            <h3>Environment</h3>
+            <p>Website portfolio dengan desain minimalis.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com">Code</a>
+                <a href="https://example.com">See</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+            <img src="Assets/t4.jpg" alt="Task Management App">
+        </div>
+        <div class="project-content">
+            <h3>Task Management App</h3>
+            <p>Aplikasi pengelola tugas harian untuk produktivitas.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com">Code</a>
+                <a href="https://example.com">See</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+            <img src="Assets/t5.jpg" alt="Weather Dashboard">
+        </div>
+        <div class="project-content">
+            <h3>Weather Dashboard</h3>
+            <p>Melihat prakiraan cuaca real-time menggunakan API.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com">Code</a>
+                <a href="https://example.com">See</a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+    
+        <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Mari Berkolaborasi!</h3>
+                    <p>Saya terbuka untuk peluang baru. Hubungi saya melalui form atau kontak di bawah.</p>
+                    <br>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>devdanzaimnarendrata8@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">📱</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+62 858-7688-7871</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Kab. Semarang, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Masukkan email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Masukkan subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" placeholder="Tulis pesan Anda..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Kirim Pesan</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Portfolio</h3>
+                <p>Terima kasih telah mengunjungi portfolio saya. Mari berkolaborasi untuk membuat sesuatu yang amazing!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p class="contact-email">
+                    <i class="fa-regular fa-envelope"></i> devdanzaimnarendrata8@gmail.com
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/Dezanosaurus" target="_blank" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/devdannarendrata?igsh=MXJjOHFncmEyZHVkdQ==" target="_blank" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@dezdangg?_r=1&_t=ZS-96R3Le9Xdfs" target="_blank" title="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://youtube.com/@madidan?si=334nJii_z5Gc7III" target="_blank" title="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Made with ❤️ by Dezanosaurus © 2026</p>
+        </div>
+    </div>
+</footer>
+    
+        <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
+    <script>
+        // Navbar scroll
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+const navLinks = document.querySelectorAll('.nav-link');
+
+// 1. Fungsi Toggle Hamburger Menu
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// 2. Tutup menu saat salah satu link diklik (khusus mode HP)
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
+// 3. Effect Navbar saat di-scroll (Ubah background/tambah class)
+window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 100);
+});
+
+// 4. Update Active Link secara otomatis saat di-scroll
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        // Menggunakan window.scrollY karena pageYOffset sudah deprecated di beberapa browser modern
+        if (window.scrollY >= sectionTop - 220) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').slice(1) === current) {
+            link.classList.add('active');
+        }
+    });
+});
+
+        // Skills animation
+        const animateSkills = () => {
+            const skillsSection = document.getElementById('skills');
+            const scrollPos = window.pageYOffset + window.innerHeight;
+            if (scrollPos > skillsSection.offsetTop + 100 && !skillsSection.classList.contains('animated')) {
+                document.querySelectorAll('.skill-progress').forEach(bar => {
+                    bar.style.width = bar.getAttribute('data-progress') + '%';
+                });
+                skillsSection.classList.add('animated');
+            }
+        };
+
+        // Scroll to top
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            animateSkills();
+            scrollTopBtn.classList.toggle('show', window.pageYOffset > 500);
+        });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Contact form
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim.');
+            e.target.reset();
+        });
+        
+        // Lampu
+        const themeToggle = document.getElementById('theme-toggle');
+const icon = themeToggle.querySelector('i');
+
+themeToggle.addEventListener('click', () => {
+    // Menambah atau menghapus class 'light-theme' pada elemen body
+    document.body.classList.toggle('light-theme');
+    
+    // Mengubah ikon tombol berdasarkan tema aktif
+    if (document.body.classList.contains('light-theme')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun'); // Ganti ikon jadi matahari saat mode terang
+    } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon'); // Ganti ikon kembali jadi bulan saat mode gelap
+    }
+});
+    </script>
+  
+</body>
+</html>
