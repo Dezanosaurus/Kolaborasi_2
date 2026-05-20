@@ -285,7 +285,6 @@ section {padding: 120px 20px; transition: background 0.3s;}
 }
 
 /* Experience Timeline */
-/* Perubahan warna background menggunakan variabel tema */
 .experience-section {
     background: var(--bg-section);
     transition: background 0.3s;
@@ -323,7 +322,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
     padding-left: 55%;
 }
 
-/* Titik lingkaran timeline, border-nya otomatis mengikuti warna dasar tema gelap/terang */
+/* Titik lingkaran timeline*/
 .timeline-dot {
     position: absolute; 
     top: 0; 
@@ -352,13 +351,11 @@ section {padding: 120px 20px; transition: background 0.3s;}
     transform: scale(1.05);
 }
 
-/* Teks paragraf deskripsi di dalam timeline */
 .timeline-content p {
     color: var(--text-sub);
     transition: color 0.3s;
 }
 
-/* Tag Tahun menggunakan gradasi Cyan-Magenta asli Anda */
 .timeline-year {
     display: inline-block; 
     padding: 8px 20px;
@@ -369,14 +366,12 @@ section {padding: 120px 20px; transition: background 0.3s;}
     margin-bottom: 15px;
 }
 
-/* Judul Posisi Kerja / Pengalaman */
 .timeline-title {
     font-size: 24px; 
     color: var(--primary); 
     margin-bottom: 10px;
 }
 
-/* Nama Perusahaan / Instansi (Menggunakan warna aksen kuning neon Anda) */
 .timeline-company {
     font-size: 18px; 
     color: var(--accent); 
@@ -408,7 +403,6 @@ section {padding: 120px 20px; transition: background 0.3s;}
 }
 
 /* Skills */
-/* Perubahan warna background menggunakan variabel tema */
 .skills-section {
     background: var(--bg-section);
     transition: background 0.3s;
@@ -423,22 +417,22 @@ section {padding: 120px 20px; transition: background 0.3s;}
     margin-bottom: 50px;
 }
 
-/* Header skill (Teks nama skill & persentase) */
+/* Header skill */
 .skill-header {
     display: flex; 
     justify-content: space-between; 
     margin-bottom: 15px;
-    color: var(--text-main); /* Mengikuti mode gelap/terang */
+    color: var(--text-main);
     transition: color 0.3s;
 }
 
 .skill-name {
     font-weight: 700; 
     font-size: 22px; 
-    color: var(--primary); /* Menggunakan warna cyan neon Anda */
+    color: var(--primary);
 }
 
-/* Wadah luar progress bar */
+/* Progress bar */
 .skill-bar {
     width: 100%; 
     height: 20px; 
@@ -448,7 +442,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
     border: 2px solid rgba(0, 212, 255, 0.2);
 }
 
-/* Isi progress bar yang bergerak (Pewarnaan gradasi gradiennya tetap di-handle lewat HTML inline style Anda) */
+/* Isi progress bar */
 .skill-progress {
     height: 100%; 
     border-radius: 25px; 
@@ -459,22 +453,20 @@ section {padding: 120px 20px; transition: background 0.3s;}
 /* Layout Grid untuk Cards */
 .skills-grid {
     display: grid; 
-    /* Mengunci kolom agar selalu berjumlah 3 dengan lebar yang sama besar */
     grid-template-columns: repeat(3, 1fr); 
     gap: 40px; 
     margin-top: 80px;
 }
 
-/* KODE TAMBAHAN: Agar tampilan tetap rapi saat dibuka di HP / Layar Kecil */
 @media (max-width: 992px) {
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr); /* Menjadi 2 kolom di tablet */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
     .skills-grid {
-        grid-template-columns: 1fr; /* Menjadi 1 kolom di HP agar tidak kesempitan */
+        grid-template-columns: 1fr;
     }
 }
 
@@ -491,14 +483,13 @@ section {padding: 120px 20px; transition: background 0.3s;}
 
 /* Judul Teknologi di dalam Card */
 .skill-card h3 {
-    color: var(--text-main); /* Otomatis putih di dark mode, gelap di light mode */
-    margin-bottom: 15px;
+    color: var(--text-main);
     transition: color 0.3s;
 }
 
 /* Deskripsi singkat di bawah judul Card */
 .skill-card p {
-    color: var(--text-sub); /* Otomatis abu transparan / kontras menyesuaikan tema */
+    color: var(--text-sub);
     transition: color 0.3s;
 }
 
@@ -506,7 +497,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
     transform: translateY(-30px) scale(1.05);
 }
 
-/* Logo Brand (Font Awesome / SVG) */
+
 .skill-logo {
     font-size: 90px; 
     margin-bottom: 25px; 
@@ -522,7 +513,6 @@ section {padding: 120px 20px; transition: background 0.3s;}
     transform: scale(1.2) rotate(360deg);
 }
 
-/* Warna Logo Brand */
 .text-html { color: #E34F26; }
 .text-css { color: #1572B6; }
 .text-js { color: #F7DF1E; }
@@ -530,7 +520,6 @@ section {padding: 120px 20px; transition: background 0.3s;}
 .text-bootstrap { color: #7952B3; }
 
 /* Projects */
-/* Perubahan warna background menggunakan variabel tema */
 .projects-section {
     background: var(--bg-section);
     transition: background 0.3s;
@@ -539,14 +528,14 @@ section {padding: 120px 20px; transition: background 0.3s;}
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Membuat item di baris terakhir otomatis ke tengah */
+    justify-content: center; 
     gap: 40px;
 }
 
 .project-card {
-    /* Mengatur lebar ideal card agar responsif */
+    /* Mengatur lebar ideal card biar responsif */
     flex: 1 1 350px; 
-    max-width: 400px; /* Batas lebar maksimal agar card tidak terlalu melar */
+    max-width: 400px; /* Batas lebar maksimal biar nggak melebar */
     
     background: rgba(0, 212, 255, 0.05); 
     backdrop-filter: blur(10px);
@@ -563,7 +552,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
 .project-image {
     height: 250px; 
     overflow: hidden; /* Memastikan sudut gambar mengikuti kelengkungan card */
-    background: var(--dark-light); /* Background mengikuti variabel warna gelap Anda */
+    background: var(--dark-light); /* Background mengikuti variabel warna gelap */
 }
 
 .project-image img {
@@ -582,14 +571,14 @@ section {padding: 120px 20px; transition: background 0.3s;}
     padding: 35px;
 }
 
-/* Judul proyek menggunakan warna primer (Cyan Neon) Anda */
+/* Judul proyek */
 .project-content h3 {
     font-size: 26px; 
     color: var(--primary); 
     margin-bottom: 15px;
 }
 
-/* Deskripsi proyek otomatis berubah warna menyesuaikan tema */
+/* Deskripsi proyek */
 .project-content p {
     color: var(--text-sub);
     transition: color 0.3s;
@@ -602,7 +591,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
     margin: 25px 0;
 }
 
-/* Tag teknologi menggunakan warna primer Anda */
+/* Tag teknologi */
 .tag {
     padding: 8px 18px; 
     background: rgba(0, 212, 255, 0.2);
@@ -631,7 +620,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
     transition: all 0.3s;
 }
 
-/* Hover tombol link menggunakan kombinasi gradasi primer (Cyan) dan sekunder (Magenta) Anda */
+/* Hover tombol link */
 .project-links a:hover {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white; 
@@ -639,7 +628,6 @@ section {padding: 120px 20px; transition: background 0.3s;}
 }
 
 /* Contact */
-/* Perubahan warna background menggunakan variabel tema */
 .contact-section {
     background: var(--bg-section);
     transition: background 0.3s;
@@ -651,7 +639,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
     gap: 60px;
 }
 
-/* Judul info menggunakan warna primer (Cyan Neon) Anda */
+/* Judul info */
 .contact-info h3 {
     font-size: 32px; 
     color: var(--primary); 
@@ -684,7 +672,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
     transform: translateX(15px);
 }
 
-/* Ikon kartu kontak menggunakan gradasi primer (Cyan) dan sekunder (Magenta) Anda */
+/* Ikon kartu kontak menggunakan */
 .contact-card-icon {
     width: 60px; 
     height: 60px; 
@@ -716,7 +704,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
     background: rgba(0, 212, 255, 0.05);
     border: 2px solid rgba(0, 212, 255, 0.2);
     border-radius: 15px; 
-    color: var(--text-main); /* Mengikuti mode gelap (putih) / terang (gelap) */
+    color: var(--text-main); 
     font-family: 'Poppins', sans-serif; 
     outline: none;
     transition: border-color 0.3s, color 0.3s;
@@ -746,7 +734,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
     text-transform: uppercase;
 }
 
-/* Efek hover pada tombol kirim yang bertransformasi dengan warna aksen kuning jika diperlukan */
+/* Efek hover pada tombol kirim */
 .submit-btn:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
@@ -770,7 +758,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
 }
 .footer-links a:hover {color: var(--primary); transform: translateX(10px);}
 
-/* Perbaikan gaya teks email agar ikon sejajar */
+/* Teks email agar ikon sejajar */
 .contact-email {
     display: flex;
     align-items: center;
@@ -783,7 +771,7 @@ section {padding: 120px 20px; transition: background 0.3s;}
     color: var(--primary);
 }
 
-/* Modifikasi Sosial Media */
+/* Sosial Media */
 .footer-social {
     display: flex; 
     gap: 15px;
