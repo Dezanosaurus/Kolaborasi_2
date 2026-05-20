@@ -283,6 +283,10 @@ section {padding: 120px 20px; transition: background 0.3s;}
     justify-content: center;
     color: white; /* Memastikan ikon di dalam box berwarna putih terang */
 }
+.feature-icon i {
+    font-size: 2rem;
+    line-height: 1;
+}
 
 /* Experience Timeline */
 .experience-section {
